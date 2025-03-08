@@ -1,0 +1,260 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  padding: 20px;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-container :first-child {
+  width: 24%;
+  margin-left: 0;
+}
+
+.heading-container :last-child {
+  width: 24%;
+  margin-right: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #ff6b82;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.offer-card,
+.offer-card-hf {
+  width: 341px;
+  min-height: 75px;
+  border: 2px solid #f2f2f2;
+  padding: 10px;
+  margin: 20px 0;
+  display: flex;
+  position: relative;
+  transition: all 0.3s ease, height 0.9s ease;
+}
+
+.offer-card-hf {
+  height: auto;
+  border-color: #ff6b82;
+  background-color: #fff9fa;
+  padding-top: 20px;
+}
+
+.offer-card-hf::after {
+  content: "Most Popular";
+  font-size: 12px;
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background-color: #ff6b82;
+  color: white;
+  padding: 5px 14px;
+  font-weight: bold;
+  border-radius: 2px;
+  border-top-right-radius: 1px;
+  border-top-left-radius: 1px;
+}
+
+.offer-card-hf::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  right: 9.5px;
+  width: 105px;
+  height: 14px;
+  border-top: 9px solid #d7445b;
+  border-left: 7px solid #ff6b82;
+  border-right: 7px solid #ff6b82;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  transform: translateY(-1px);
+  transform: rotate(180deg) scale(1);
+  overflow: hidden;
+}
+
+.badge {
+  background-color: #ff6b82;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.offer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.flex-direction-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-div {
+  display: flex;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #dadada;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  background-color: #ff6b82;
+}
+
+input[type="radio"]:checked {
+  border: 1px solid #ff6b82;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+.details {
+  margin-left: 10px;
+}
+
+.tag {
+  margin-top: 5px;
+}
+
+.price {
+  color: #333;
+  font-weight: bold;
+  font-size: 14.46px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 10px;
+}
+
+.options,
+.options2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.options2 {
+  display: none;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-to-cart {
+  background-color: #ff6b82;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+table {
+  width: 165px;
+  font-size: 12px;
+  margin: auto;
+  margin-left: 8%;
+  text-align: left;
+  height: 105px;
+}
+
+.large {
+  display: none;
+}
+
+.large table {
+  height: 145px;
+}
+
+.footer {
+  text-align: right;
+  margin-top: 10px;
+  font-style: italic;
+  color: #aaa;
+  font-size: 12px;
+}
+
+.free-delivery {
+  color: #ff6b82;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 475px) {
+  body {
+    display: block;
+    min-height: 100vh;
+    width: 100vw;
+  }
+
+  .container {
+    width: 100vw;
+    padding: 20px;
+  }
+
+  .heading-container h2 {
+    font-size: 6vw;
+  }
+
+  .heading-container hr {
+    opacity: 0.5;
+  }
+
+  .offer-card,
+  .offer-card-hf {
+    width: 94%;
+  }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>BOGO Offer UI</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading-container">
+            <hr>
+            <h2>YAY! It's BOGO</h2>
+            <hr>
+        </div>
+        <div class="offer-card flex-direction-col active" data-offer="1">
+            <div class="offer-header">
+                <div class="flex-div">
+                    <input type="radio" name="offer" value="1" checked>
+                    <span class="details">
+                        <strong>1 Unit</strong> <span class="badge">10% Off</span>
+                        <div class="tag">Standard Price</div>
+                    </span>
+                </div>
+                <div>
+                    <span class="price">$10.00 USD</span><br>
+                    <span class="original-price">$24.00 USD</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer-card-hf flex-direction-col" data-offer="2">
+            <div class="offer-header">
+                <div class="flex-div">
+                    <input type="radio" name="offer" value="2">
+                    <span class="details">
+                        <strong>2 Unit</strong> <span class="badge">20% Off</span>
+                    </span>
+                </div>
+                <div>
+                    <span class="price">$18.00 USD</span><br>
+                    <span class="original-price">$24.00 USD</span>
+                </div>
+            </div>
+
+            <div class="options">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>Size</td>
+                        <td>Colour</td>
+                    </tr>
+                    <tr>
+                        <td>#1</td>
+                        <td>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>Black</option>
+                                <option>White</option>
+                                <option>Red</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#2</td>
+                        <td>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>Black</option>
+                                <option>White</option>
+                                <option>Red</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="offer-card flex-direction-col" data-offer="3">
+            <div class="offer-header">
+                <div class="flex-div">
+                    <input type="radio" name="offer" value="3">
+                    <span class="details">
+                        <strong>3 Unit</strong> <span class="badge">30% Off</span>
+                    </span>
+                </div>
+                <div>
+                    <span class="price">$24.00 USD</span><br>
+                    <span class="original-price">$24.00 USD</span>
+                </div>
+            </div>
+            <div class="options2">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>Size</td>
+                        <td>Colour</td>
+                    </tr>
+                    <tr>
+                        <td>#1</td>
+                        <td>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>Black</option>
+                                <option>White</option>
+                                <option>Red</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#2</td>
+                        <td>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>Black</option>
+                                <option>White</option>
+                                <option>Red</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#3</td>
+                        <td>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>Black</option>
+                                <option>White</option>
+                                <option>Red</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="pricing-container">
+            <div class="free-delivery">Free Delivery</div>
+            <div class="total">Total: $18.00 USD</div>
+        </div>
+
+        <button class="add-to-cart"> Add to Cart</button>
+
+        <div class="footer">@ Powered by Pumper</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
